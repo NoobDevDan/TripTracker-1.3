@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#354054">
+    <LinearLayout
+        android:id="@+id/SetTripName_LinearLayout1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Save Trip As:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/SetTripName_textView1"
+            android:textColor="#ffffff" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/SetTripName_editText1"
+            android:hint="Enter Trip Name Here"
+            android:inputType="textCapWords"
+            android:singleLine="true"
+            android:focusable="true"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:enabled="true"
+            android:editable="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/SetTripName_LinearLayout2"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/SetTripName_LinearLayout1">
+        <Button
+            android:text="Ok"
+            android:layout_width="100dip"
+            android:layout_height="40dip"
+            android:id="@+id/SetTripName_okButton" />
+    </LinearLayout>
+</RelativeLayout>

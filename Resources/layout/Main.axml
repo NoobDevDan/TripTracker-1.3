@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayout1"
+    android:background="#354054"
+    android:paddingTop="5dip">
+  <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_alignParentTop="true"
+       android:id="@+id/relativeLayout2">
+    <Button
+        android:text="Start Trip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/startButton"
+        android:layout_marginLeft="10dip"
+        android:textSize="14dip"
+        android:textAllCaps="true" />
+    <Button
+        android:text="Stop Trip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stopButton"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_toRightOf="@+id/startButton"
+        android:textSize="14dip"
+        android:textAllCaps="true" />
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/space1"
+        android:layout_toRightOf="@+id/stopButton" />
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/space1"
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:background="#354054">
+      <ImageButton
+          android:src="@drawable/walking"
+          android:layout_marginTop="2dip"
+          android:layout_width="33dip"
+          android:layout_height="33dip"
+          android:id="@+id/walkButton"
+          android:layout_centerInParent="true" />
+      <ImageButton
+          android:src="@drawable/car"
+          android:layout_marginTop="2dip"
+          android:layout_marginLeft="4dip"
+          android:layout_width="33dip"
+          android:layout_height="33dip"
+          android:id="@+id/carButton"
+          android:layout_toRightOf="@+id/walkButton"
+          android:layout_centerInParent="true" />
+      <ImageButton
+          android:src="@drawable/plane"
+          android:layout_marginTop="2dip"
+          android:layout_marginLeft="4dip"
+          android:layout_width="33dip"
+          android:layout_height="33dip"
+          android:id="@+id/planeButton"
+          android:layout_toRightOf="@+id/carButton"
+          android:layout_centerInParent="true" />
+      <Space
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/space2"
+          android:layout_toRightOf="@+id/planeButton" />
+      <ImageButton
+          android:src="@drawable/menu"
+          android:layout_marginTop="2dip"
+          android:layout_marginLeft="13dip"
+          android:layout_width="15dip"
+          android:layout_height="33dip"
+          android:id="@+id/menuButton"
+          android:layout_toRightOf="@+id/space2"
+          android:layout_centerInParent="true" />
+    </LinearLayout>
+  </RelativeLayout>
+    <fragment
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_above="@+id/linearLayout2" />
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="1dip"
+        android:layout_above="@+id/linearLayout3"
+        android:background="#354054"
+        android:gravity="center_vertical"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:text="@+string/speedNowString"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dip"
+            android:layout_marginRight="20dip"
+            android:layout_below="@+id/speedText"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/speedNowText"
+            android:textColor="#e8ebef"
+            android:textSize="16dip" />
+        <TextView
+            android:text="@+string/stopCountString"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dip"
+            android:layout_marginRight="20dip"
+            android:layout_toRightOf="@+string/speedNowString"
+            android:layout_below="@+string/distanceString"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/stopCountText"
+            android:textColor="#e8ebef"
+            android:textSize="16dip" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dip"
+        android:layout_alignParentBottom="true"
+        android:background="#354054"
+        android:gravity="center_vertical"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:text="@+string/speedString"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dip"
+            android:layout_marginRight="20dip"
+            android:id="@+id/speedText"
+            android:textColor="#e8ebef"
+            android:textSize="16dip" />
+        <TextView
+            android:text="@+string/distanceString"
+            android:textAlignment="center"
+            android:layout_marginLeft="16dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/distanceText"
+            android:layout_toRightOf="@+id/speedString"
+            android:layout_alignRight="@+id/linearLayout1"
+            android:textColor="#e8ebef"
+            android:textSize="16dip" />
+    </LinearLayout>
+</RelativeLayout>

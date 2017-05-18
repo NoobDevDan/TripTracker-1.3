@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Hello">Hello World, Click Me!</string>
+    <string name="ApplicationName">TripTracker</string>
+    <string name="google_maps_key">AIzaSyD1mJkJ1vCrnZmd65V1GDXiMiDS6EDuYUM</string>
+    <string name="distanceString">Total Distance:  00.0 Km</string>
+    <string name="speedString">AVG Speed:  00.0 Km/h</string>
+</resources>

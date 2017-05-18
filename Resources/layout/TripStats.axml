@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#354054">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tripStats_LinearLayout1">
+            <TextView
+                android:text="Trip Name:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tripStats_TripName"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="8dip" />
+            <TextView
+                android:text="Trip Start: "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tripStats_TripStart"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="8dip" />
+          <TextView
+                android:text="Trip Finish: "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tripStats_TripFinish"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="8dip" />
+            <TextView
+                android:text="Trip Duration: "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tripStats_TripDuration"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="8dip" />
+            <TextView
+                android:text="Trip Distance: "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tripStats_TripDistance"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="8dip" />
+            <TextView
+                android:text="Number of Stops: "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tripStats_NumberOfStops"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="8dip" />
+            <TextView
+                android:text="Time Spent Stopped: "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tripStats_StopDuration"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="8dip" />
+            <TextView
+                android:text="AVG Speed: "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tripStats_AvgSpeed"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="8dip" />
+            <ImageView
+                android:id="@+id/tripStats_ImageView1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

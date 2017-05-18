@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#354054">
+    <RelativeLayout
+        android:id="@+id/options_RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="3dip"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip">
+        <TextView
+            android:id="@+id/options_DistanceMeasurementText"
+            android:text="Distance Type: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dip"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:textColor="#ffffff" />
+        <Space
+            android:layout_width="15dip"
+            android:layout_height="15dip"
+            android:id="@+id/space1"
+            android:layout_toRightOf="@+id/options_DistanceMeasurementText" />
+        <RadioGroup
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/options_RadioGroup1"
+            android:layout_toRightOf="@+id/space1">
+            <RadioButton
+                android:text="Kilometers"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/options_KilometersRadioButton"
+                android:clickable="true"
+                android:textColor="#ffffff" />
+            <RadioButton
+                android:text="Miles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/options_MilesRadioButton"
+                android:textColor="#ffffff" />
+        </RadioGroup>
+    </RelativeLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dip"
+        android:id="@+id/space1"
+        android:layout_below="@+id/options_DistanceMeasurementText" />
+    <RelativeLayout
+        android:id="@+id/options_RelativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/options_RelativeLayout1"
+        android:padding="3dip"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip">
+        <TextView
+            android:id="@+id/options_StopsEnabledText"
+            android:text="Record Stops: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dip"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/options_DistanceMeasurementText"
+            android:textColor="#ffffff" />
+        <Space
+            android:layout_width="15dip"
+            android:layout_height="15dip"
+            android:id="@+id/space2"
+            android:layout_toRightOf="@+id/options_StopsEnabledText"
+            android:layout_below="@+id/space1" />
+        <RadioGroup
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/options_RadioGroup2"
+            android:clickable="true"
+            android:layout_toRightOf="@+id/space2">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Yes"
+                android:id="@+id/options_EnableStopsRadioButton"
+                android:textColor="#ffffff" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/options_DisableStopsRadioButton"
+                android:textColor="#ffffff" />
+        </RadioGroup>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/options_RelativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip"
+        android:layout_below="@+id/options_RelativeLayout2">
+        <TextView
+            android:id="@+id/options_TripScreenOrientation"
+            android:text="Screen Orientation: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dip"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:textColor="#ffffff" />
+        <Space
+            android:layout_width="10dip"
+            android:layout_height="15dip"
+            android:id="@+id/space3"
+            android:layout_toRightOf="@+id/options_TripScreenOrientation" />
+        <RadioGroup
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/options_RadioGroup3"
+            android:layout_toRightOf="@+id/space3">
+            <RadioButton
+                android:text="Portrait"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/options_PortraitRadioButton"
+                android:clickable="true"
+                android:textColor="#ffffff" />
+            <RadioButton
+                android:text="Landscape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/options_LandscapeRadioButton"
+                android:textColor="#ffffff" />
+        </RadioGroup>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/options_LinearLayout1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

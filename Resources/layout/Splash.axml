@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/splash_RelativeLayout1"
+    android:background="#354054">
+    <ImageView
+        android:src="@drawable/Logo"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_above="@+id/splash_NewButton"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:text="New Trip"
+        android:textSize="20dip"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/splash_NewButton"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dip"
+        android:layout_alignLeft="@+id/splash_SavedButton"
+        android:layout_alignRight="@+id/splash_SavedButton" />
+    <Button
+        android:text="Saved Trips"
+        android:textSize="20dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/splash_SavedButton"
+        android:layout_marginTop="5dip"
+        android:layout_below="@+id/splash_NewButton"
+        android:layout_centerInParent="true" />
+    <Button
+        android:text="Options"
+        android:textSize="20dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/splash_OptionsButton"
+        android:layout_marginTop="5dip"
+        android:layout_below="@+id/splash_SavedButton"
+        android:layout_centerInParent="true"
+        android:layout_alignLeft="@+id/splash_SavedButton"
+        android:layout_alignRight="@+id/splash_SavedButton" />
+    <LinearLayout
+        android:id="@+id/splash_LinearLayout1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true" 
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

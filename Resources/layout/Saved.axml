@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#354054">
+<LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/saved_LinearLayout1"
+    android:background="#354054"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:layout_above="@+id/saved_LinearLayout2"
+    android:layout_alignParentTop="true">
+    <ListView
+        android:minWidth="25dip"
+        android:minHeight="25dip"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:id="@+id/saved_listView1" />
+  </LinearLayout>
+  <LinearLayout
+        android:id="@+id/saved_LinearLayout2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>
